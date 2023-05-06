@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { v4 as uuidv4 } from 'uuid';
 import { addTodo } from '../redux/modules/todos';
 import styled from 'styled-components';
@@ -37,7 +37,7 @@ const InputForm = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  const todos = useSelector((state) => state.todos.todos);
+  // const todos = useSelector((state) => state.todos.todos);
   const dispatch = useDispatch();
 
   
