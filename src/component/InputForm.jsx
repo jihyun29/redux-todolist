@@ -24,6 +24,7 @@ const StAddInput = styled.input`
   width: 240px;
   border-radius: 5px;
   padding: 0 12px;
+  margin: 10px;
 `;
 
 const StAddButton = styled.button`
@@ -69,11 +70,14 @@ const InputForm = () => {
 
   return (
     <InputBOX>
+      
       <div>
+       <h1>Todo List를 입력하세요!</h1><br/> 
       제목:&nbsp;
-      <StAddInput type='text' value={title} onChange={titleChangeHandler}/>
-      &nbsp;내용:&nbsp;
+      <StAddInput type='text' value={title} onChange={titleChangeHandler}/><br/>
+      내용:&nbsp;
       <StAddInput type='text' value={content} onChange={contentChangeHandler}/> &nbsp;
+      
       <StAddButton type="button" class="btn btn-outline-warning" onClick={onSubmitHandler}>추가하기</StAddButton>
       </div>
     </InputBOX>

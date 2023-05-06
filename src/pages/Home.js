@@ -4,15 +4,22 @@
 import React from "react";
 import InputForm from "../component/InputForm";
 import Card from '../component/TodoCard';
+import styled from "styled-components";
 
+const Stlayout = styled.div`
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 800px;
+  background: white; ;
+`;
 
 const Home = () => {
 
   return (
-    <div>
+    <Stlayout>
       <InputForm/>
       <Card/>
-    </div>
+    </Stlayout>
   ) 
 
 }
