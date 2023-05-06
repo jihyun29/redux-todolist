@@ -3,7 +3,7 @@ import {  useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { deleteTodo, updateTodo } from '../redux/modules/todos';
 import styled from 'styled-components';
-import 'bootstrap/dist/css/bootstrap.css';
+
 
 const StAl = styled.div`
   display: flex; 
