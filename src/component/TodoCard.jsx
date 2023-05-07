@@ -17,6 +17,7 @@ const StCard= styled.div`
   margin: 10px;
   padding: 12px 24px 24px 24px;
   background-color: lightyellow;
+  word-wrap: break-word;
 `;
 
 const Card = () => {

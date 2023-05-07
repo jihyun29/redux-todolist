@@ -50,6 +50,10 @@ const InputForm = () => {
     setContent(event.target.value);
   };
 
+  const resetinput =()=>{
+    setTitle("")
+    setContent("")
+  }
   //추가
   const onSubmitHandler = (event) => {
     event.preventDefault();
@@ -64,6 +68,9 @@ const InputForm = () => {
       })
       
     );
+
+    resetinput();
+    
   };
 
 
