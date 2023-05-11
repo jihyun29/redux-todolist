@@ -90,9 +90,7 @@ const todos = (state = initialState, action) => {
 				todos: state.todos.map((item)=> item.id === action.payload ? { ...item, isDone: !item.isDone } : item)
 			};
 			
-		//리스트
-		case LIST_TODO:
-			return	[...action.payload];
+		
 			
 		default:
       return state;
